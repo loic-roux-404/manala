@@ -7,7 +7,9 @@ require (
 	github.com/OpenPeeDeeP/xdg v0.2.0
 	github.com/apex/log v1.1.1
 	github.com/fsnotify/fsnotify v1.4.7
+	github.com/gdamore/tcell v1.3.0
 	github.com/gen2brain/beeep v0.0.0-20190719094215-ece0cb67ca77
+	github.com/gizak/termui/v3 v3.1.0
 	github.com/go-playground/validator/v10 v10.0.1
 	github.com/godbus/dbus v4.1.0+incompatible // indirect
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
@@ -19,11 +21,12 @@ require (
 	github.com/lunixbochs/vtclean v1.0.0 // indirect
 	github.com/manifoldco/promptui v0.6.0
 	github.com/mattn/go-colorable v0.1.4 // indirect
-	github.com/mattn/go-isatty v0.0.11 // indirect
+	github.com/mattn/go-isatty v0.0.11
 	github.com/mingrammer/commonregex v1.0.1
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/mitchellh/reflectwalk v1.0.1 // indirect
 	github.com/nicksnyder/go-i18n v2.0.3+incompatible // indirect
+	github.com/nsf/termbox-go v0.0.0-20190121233118-02980233997d
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d // indirect
 	github.com/pelletier/go-toml v1.6.0 // indirect
 	github.com/spf13/afero v1.2.2 // indirect

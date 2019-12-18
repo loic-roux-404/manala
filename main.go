@@ -41,6 +41,7 @@ func main() {
 	rootCmd.AddCommand(cmd.ListCmd())
 	rootCmd.AddCommand(cmd.UpdateCmd())
 	rootCmd.AddCommand(cmd.WatchCmd())
+	rootCmd.AddCommand(cmd.PartyCmd())
 
 	cobra.OnInitialize(func() {
 		// Debug
