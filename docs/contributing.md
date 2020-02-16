@@ -11,6 +11,31 @@ go get -u ./...
 go mod tidy
 ```
 
+# Snap
+
+Requirements
+
+* snapcraft 3.10+
+
+Build:
+
+```shell
+snapcraft
+```
+
+Clean:
+
+```shell
+snapcraft clean
+```
+
+Install / Remove:
+
+```shell
+snap install manala_[version]_amd64.snap --dangerous
+snap remove manala
+```
+
 ## Documentation
 
 ```shell

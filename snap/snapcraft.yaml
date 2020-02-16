@@ -1,0 +1,37 @@
+name: manala
+
+summary: Let your projects plumbings up to date
+description: |
+  Manala synchronize some boring parts of your projects,
+  such as makefile targets, virtualization and provisioning files...
+
+  Recipes are pulled from a git repository, or a local directory.
+
+base: core18
+version: git
+grade: stable
+confinement: strict
+
+parts:
+  manala:
+    plugin: go
+    go-channel: 1.13/stable
+    source: .
+    build-packages:
+      - gcc
+    stage-packages:
+      - libnotify-bin
+    #override-build: |
+    #  go build \
+    #    -ldflags "-X 'main.version=$(git describe --tags --abbrev=0)'" \
+    #    -o $SNAPCRAFT_PART_INSTALL/bin
+
+apps:
+  manala:
+    command: bin/manala
+    plugs:
+      - home
+      - network
+      - removable-media
+      - ssh-keys
+      - desktop
